@@ -4,13 +4,16 @@ let allBtn = document.getElementsByClassName('set-btn');
 let count = 0;
 for (let btn of allBtn) {
     btn.addEventListener('click', function (event) {
+    // btn.setAttribute("disabled" , "true");
+    btn.disabled = 'true';
 
         if (count < 4) {
             btn.classList.add('bg-[#1DD100]');
             count++;
         }
         else if (count === 4) {
-            alert('One persone can selected only 4 seat..')
+            alert('One persone can selected only 4 seat..');
+            return;
         }
 
         //count steat number
@@ -18,16 +21,17 @@ for (let btn of allBtn) {
         let availableSeat = 40 - count;
         totalSeat.innerText = availableSeat;
 
+
         //selected seat
         let selectedSeat = document.getElementById('selected-seat').innerText = count;
 
         //seat list
-        if (count < 4) {
+        if (count <= 4) {
             let seatName = event.target.innerText;
             let seatList = document.getElementById('seat-list');
 
             let li = document.createElement('li');
-            li.classList.add('flex', 'flex-col');
+            li.classList.add('flex','justify-between');
 
             let p = document.createElement('p');
             let p2 = document.createElement('p');
@@ -37,11 +41,15 @@ for (let btn of allBtn) {
             p2.innerText = 'Economoy';
             p3.innerText = '550';
 
-            seatList.appendChild(p);
-            seatList.appendChild(p2);
-            seatList.appendChild(p3);
+            li.appendChild(p);
+            li.appendChild(p2);
+            li.appendChild(p3);
+
+            seatList.append(li)
+
 
         }
+    
         //calculate total price
         let totalPrice = document.getElementById('total-price');
         let price = count * 550;
@@ -103,6 +111,7 @@ for (let btn of allBtn) {
             let nextBtn = document.getElementById('next-btn');
             nextBtn.removeAttribute('disabled');
         }
+        
     })
 
 }
