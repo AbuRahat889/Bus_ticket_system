@@ -33,7 +33,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.day{
+.seat-serial{
     /* background-color: lightgray; */
     font-size: 30px;
     display: flex;
