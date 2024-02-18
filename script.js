@@ -81,8 +81,16 @@ for (let btn of allBtn) {
                     let grandPrice = document.getElementById('grand-price');
                     let gPrice = price - calculateDiscound;
                     grandPrice.innerText = gPrice;
-                    
+                }
+                else if(cupponInput === 'Couple 20'){
+                    let discoundPricce = document.getElementById('discound-price');
+                    let calculateDiscound = price * 0.2;
+                    discoundPricce.innerText = calculateDiscound;
 
+                    //discound grand price update
+                    let grandPrice = document.getElementById('grand-price');
+                    let gPrice = price - calculateDiscound;
+                    grandPrice.innerText = gPrice;
                 }
 
             })
