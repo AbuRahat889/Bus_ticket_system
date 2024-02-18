@@ -21,7 +21,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="all-body">
     <!-- header section  -->
     <header class="container mx-auto">
         <!-- navber section  -->
@@ -72,7 +72,8 @@
                             <br>
                             <span class="primary-color">G.L Paribahan</span>
                         </h1>
-                        <p class="mb-5">Green Line Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
+                        <p class="mb-5">Green Line Paribahan is apparently a family owned transport company specializing
+                            in transportation of passenger bus services since 1990.</p>
                         <button class="btn bg-[#1DD100] border-none text-sm font-bold mt-20">
                             <a class="" href="#paribahan-ticket">Buy Tickets</a>
                         </button>
@@ -156,7 +157,8 @@
             <!-- Tickets boking title  -->
             <div class="text-center mt-10 px-80">
                 <h1 class="font-raleway text-4xl font-bold">G.L Paribahan</h1>
-                <p class="mt-6">The company at present operates more then 60 (Sixty) buses on schedule routes employing over 200 trained staff and safely transporting over a million passengers a year</p>
+                <p class="mt-6">The company at present operates more then 60 (Sixty) buses on schedule routes employing
+                    over 200 trained staff and safely transporting over a million passengers a year</p>
             </div>
 
             <!-- ticket info -->
@@ -173,7 +175,7 @@
                             </div>
                             <button class="btn text-[#1DD100] bg-[#1DD10026]">
                                 <img src="./images/seat-green.png" alt="">
-                                <span>40</span>seats left</button>
+                                <span id="total-seat">40</span>seats left</button>
                         </div>
 
                         <!-- ticket -->
@@ -231,64 +233,64 @@
                             <hr>
                         </div>
                         <!-- seat number -->
-                        
+
                         <div class="flex justify-end mt-4">
-                            <div class="date col-span-5 px-8"> 
+                            <div class="set-btn col-span-5 px-8">
                                 <img src="./images/wheel.svg" alt="">
                             </div>
                         </div>
-                        <div class="calander mt-4">
-                            
+                        <div id="set-container" class="calander mt-4">
+
                             <div class="day">A</div>
-                            <div id="A1" class="date btn">A1</div>
-                            <div id="A2" class="date btn">A2</div>
-                            <div id="A3" class="date btn">A3</div>
-                            <div id="A4" class="date btn">A4</div>
+                            <div id="A1" class="set-btn">A1</div>
+                            <div id="A2" class="set-btn">A2</div>
+                            <div id="A3" class="set-btn">A3</div>
+                            <div id="A4" class="set-btn">A4</div>
                             <div class="day">B </div>
-                            <div id="B1" class="date btn">B1</div>
-                            <div id="B2" class="date btn">B2</div>
-                            <div id="B3" class="date btn">B3</div>
-                            <div id="B4" class="date btn">B4</div>
+                            <div id="B1" class="set-btn">B1</div>
+                            <div id="B2" class="set-btn">B2</div>
+                            <div id="B3" class="set-btn">B3</div>
+                            <div id="B4" class="set-btn">B4</div>
                             <div class="day">C</div>
-                            <div id="C1" class="date btn">C1</div>
-                            <div id="C2" class="date btn">C2</div>
-                            <div id="C3" class="date btn">C3</div>
-                            <div id="C4" class="date btn">C4</div>
+                            <div id="C1" class="set-btn">C1</div>
+                            <div id="C2" class="set-btn">C2</div>
+                            <div id="C3" class="set-btn">C3</div>
+                            <div id="C4" class="set-btn">C4</div>
                             <div class="day">D</div>
-                            <div id="D1" class="date btn">D1 </div>
-                            <div id="D2" class="date btn">D2 </div>
-                            <div id="D3" class="date btn">D3 </div>
-                            <div id="D4" class="date btn">D4 </div>
+                            <div id="D1" class="set-btn">D1 </div>
+                            <div id="D2" class="set-btn">D2 </div>
+                            <div id="D3" class="set-btn">D3 </div>
+                            <div id="D4" class="set-btn">D4 </div>
                             <div class="day">E</div>
-                            <div id="E1" class="date btn">E1</div>
-                            <div id="E2" class="date btn">E2</div>
-                            <div id="E3" class="date btn">E3</div>
-                            <div id="E4" class="date btn">E4</div>
+                            <div id="E1" class="set-btn">E1</div>
+                            <div id="E2" class="set-btn">E2</div>
+                            <div id="E3" class="set-btn">E3</div>
+                            <div id="E4" class="set-btn">E4</div>
                             <div class="day">F</div>
-                            <div id="F1" class="date btn">F1</div>
-                            <div id="F2" class="date btn">F2</div>
-                            <div id="F3" class="date btn">F3</div>
-                            <div id="F4" class="date btn">F4</div>
+                            <div id="F1" class="set-btn">F1</div>
+                            <div id="F2" class="set-btn">F2</div>
+                            <div id="F3" class="set-btn">F3</div>
+                            <div id="F4" class="set-btn">F4</div>
                             <div class="day">J</div>
-                            <div id="G1" class="date btn">G1</div>
-                            <div id="G2" class="date btn">G2</div>
-                            <div id="G3" class="date btn">G3</div>
-                            <div id="G4" class="date btn">G4</div>
+                            <div id="G1" class="set-btn">G1</div>
+                            <div id="G2" class="set-btn">G2</div>
+                            <div id="G3" class="set-btn">G3</div>
+                            <div id="G4" class="set-btn">G4</div>
                             <div class="day">H</div>
-                            <div id="H1" class="date btn">H1</div>
-                            <div id="H2" class="date btn">H2</div>
-                            <div id="H3" class="date btn">H3</div>
-                            <div id="H4" class="date btn">H4</div>
+                            <div id="H1" class="set-btn">H1</div>
+                            <div id="H2" class="set-btn">H2</div>
+                            <div id="H3" class="set-btn">H3</div>
+                            <div id="H4" class="set-btn">H4</div>
                             <div class="day">I</div>
-                            <div id="I1" class="date btn">I1</div>
-                            <div id="I2" class="date btn">I2</div>
-                            <div id="I3" class="date btn">I3</div>
-                            <div id="I4" class="date btn">I4</div>
+                            <div id="I1" class="set-btn">I1</div>
+                            <div id="I2" class="set-btn">I2</div>
+                            <div id="I3" class="set-btn">I3</div>
+                            <div id="I4" class="set-btn">I4</div>
                             <div class="day">J</div>
-                            <div id="J1" class="date btn">J1</div>
-                            <div id="J2" class="date btn">J2</div>
-                            <div id="J3" class="date btn">J3</div>
-                            <div id="J4" class="date btn">J4</div>
+                            <div id="J1" class="set-btn">J1</div>
+                            <div id="J2" class="set-btn">J2</div>
+                            <div id="J3" class="set-btn">J3</div>
+                            <div id="J4" class="set-btn">J4</div>
 
                         </div>
                     </div>
@@ -303,45 +305,40 @@
                             <!-- price calculate -->
                             <div>
                                 <div class="flex justify-between text-lg font-semibold py-2 font-Inter">
-                                    <h2>Seat <span class="bg-[#1DD100] px-3  text-white rounded-xl">0</span></h2>
+                                    <h2>Seat <span id="selected-seat"
+                                            class="bg-[#1DD100] px-3  text-white rounded-xl">0</span></h2>
                                     <h2>class</h2>
                                     <h2>Price</h2>
                                 </div>
                             </div>
                             <hr>
-                            <div class="flex justify-between py-2">
-                                <div>C2</div>
-                                <div>Economic</div>
-                                <div>550</div>
-                            </div>
+                            <div id="seat-list" class="flex justify-between" py-2">
 
-                            <div class="flex justify-between">
-                                <div>C2</div>
-                                <div>Economic</div>
-                                <div>550</div>
                             </div>
                             <hr>
-                            <div class="font-bold flex justify-between py-4">
+                            <div id="" class="font-bold flex justify-between py-4">
                                 <h2>Total price</h2>
-                                <h2>BDT <span>1100</span></h2>
+                                <h2>BDT <span id="total-price">00</span></h2>
                             </div>
-                            
+
                             <!-- cuppon discound taka  -->
-                            <div class="font-bold flex justify-between py-4 hidden">
+                            <div id="discound-section" class="font-bold flex justify-between py-4 hidden">
                                 <h2>Total discound</h2>
-                                <h2>BDT <span>00</span></h2>
+                                <h2>BDT <span id="discound-price">00</span></h2>
                             </div>
 
                             <!-- cuppon button  -->
-                            <div class="bg-white flex gap-1 justify-between rounded-lg p-2">
-                                <input class="w-full px-2" type="text" placeholder="Have any copupon?">
-                                <button
-                                    class="btn bg-[#1DD100] border-none px-10 text-white font-semibold">apply</button>
+                            <div id="cuppon-section" class="bg-white flex gap-1 justify-between rounded-lg p-2">
+                                <input id="cuppon-input" class="w-full px-2" type="text"
+                                    placeholder="Have any copupon?">
+                                <button id="cuppon-btn"
+                                    class="btn bg-[#1DD100] border-none px-10 text-white font-semibold"
+                                    disabled>apply</button>
                             </div>
                             <!-- total price  -->
                             <div class="font-bold flex justify-between py-2">
                                 <h2>Grand Total</h2>
-                                <h2>BDT <span>1500</span> </h2>
+                                <h2>BDT <span id="grand-price">00</span> </h2>
                             </div>
                         </div>
                         <!-- passenger form  -->
@@ -351,8 +348,8 @@
                                 placeholder="Enter your name" required>
 
                             <h2 class="mt-3 text-xl font-semibold mb-3">Phone Number*</h2>
-                            <input class="w-full py-4 px-2 border rounded-lg" type="number" name="" id=""
-                                placeholder="Enter your numer" required>
+                            <input id="input-number" class="w-full py-4 px-2 border rounded-lg" type="number" name=""
+                                id="" placeholder="Enter your numer" required>
 
                             <h2 class="mt-3 text-xl font-semibold mb-3">Email Id</h2>
                             <input class="w-full py-4 px-2 border rounded-lg" type="email" name="" id=""
@@ -361,7 +358,14 @@
 
                         <!-- form button  -->
                         <div class="mt-5 flex items-center justify-center">
-                            <button class="btn w-full text-white text-xl font-bold bg-[#1DD100] p-6 pb-12">Next</button>
+                            <button class="w-full">
+                                <!-- pop-up -->
+                                <!-- The button to open modal -->
+                                <label id="next-btn" for="my_modal_6"
+                                    class="btn btn w-full text-white text-xl font-bold bg-[#1DD100] p-6 pb-12"
+                                    disabled>Next</label>
+
+                            </button>
                         </div>
                         <div class="flex justify-around mt-6 underline">
                             <a class="font-normal text-xl " href="#">Terms and Conditions</a>
@@ -397,8 +401,8 @@
                             <h2 class="font-semibold">Google Play</h2>
                         </div>
                     </div>
-                </nav>  
-                
+                </nav>
+
             </div>
 
             <div class="px-56">
@@ -408,7 +412,8 @@
                 <div class="flex justify-between mt-5 w-2/3">
                     <hr>
                     <div class="flex-1">
-                        <h2 class="text-lg text-[#ffffffcc]">&copy; all rights reserved, P-Ticket services limited.2024</h2>
+                        <h2 class="text-lg text-[#ffffffcc]">&copy; all rights reserved, P-Ticket services limited.2024
+                        </h2>
                     </div>
                     <div class="flex gap-5 text-white">
                         <a href="">Terms & condition</a>
@@ -420,6 +425,25 @@
         </div>
         <div class="my-10"></div>
     </footer>
+
+
+
+
+    <!-- pop-up section  -->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+        <div class="modal-box flex flex-col justify-center items-center">
+            <img src="./images/success.png" alt="">
+            <h3 class="font-bold text-lg text-[#27AE60]">SUCCESS</h3>
+            <p class="pt-4 font-semibold text-center">Thank you for Booking Our Bus Seats.We are working hard to find
+                the best service and deals for you.</p>
+            <p class="text-center">Shortly you will find a confirmation in your email.</p>
+            <div class="modal-action">
+                <label for="my_modal_6" class="btn">Close!</label>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./script.js"></script>
 </body>
