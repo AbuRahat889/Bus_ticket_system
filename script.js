@@ -5,7 +5,7 @@ let count = 0;
 for (let btn of allBtn) {
     btn.addEventListener('click', function (event) {
        
-    btn.setAttribute('disabled','true');
+        // btn.setAttribute("disabled", "true");
 
         if (count < 4) {
             btn.classList.add('bg-[#1DD100]');

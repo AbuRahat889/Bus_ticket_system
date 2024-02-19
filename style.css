@@ -15,9 +15,7 @@ body{
 
 }
 
-
-
-.calander{
+.seat-container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     row-gap: 20px;
@@ -34,7 +32,6 @@ body{
     align-items: center;
 }
 .seat-serial{
-    /* background-color: lightgray; */
     font-size: 30px;
     display: flex;
     justify-content: center;
